@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "declaration": true,
+        "target": "es2016",
+        "downlevelIteration": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "noEmitOnError": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "skipLibCheck": true,
+        "typeRoots": ["./src"],
+        "resolveJsonModule": true,
+        "lib": [
+            "DOM",
+            "ES5",
+            "ES6",
+            "ES2015.promise",
+            "ES2018.promise",
+            "ES2015.iterable",
+            "es2016"
+        ]
+    },
+   "include": ["./src/**/*"]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "zhiaiwan-debug",
+  "version": "1.0.0-alpha.1",
+  "author": "Lixiaofei 61538187@qq.com",
+  "description": "ZhiAiWanDebug SDK - 全面的前端监控解决方案，提供性能监控、错误追踪和用户行为分析功能。支持Web Vitals指标采集、网络请求监控、页面停留时间统计等，帮助开发者优化应用性能和用户体验。",
+  "bugs": {
+    "url": "https://github.com/qq61538187/zhiaiwan-debug/issues"
+  },
+  "homepage": "https://github.com/qq61538187/zhiaiwan-debug",
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "type": "module",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
+  },
+  "scripts": {
+    "build": "rm -fr dist && pnpm rollup -c",
+    "build:hot": "pnpm rollup -c --watch",
+    "lint": "npx prettier --write ./src",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish",
+    "check": "biome check --write --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qq61538187/zhiaiwan-debug.git"
+  },
+  "keywords": [
+    "zhiaiwan",
+    "web-vitals",
+    "监控",
+    "debug",
+    "性能"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@changesets/cli": "^2.29.5",
+    "@rollup/plugin-alias": "^4.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.7.15",
+    "rollup": "^3.20.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.0"
+  },
+  "umdModuleName": "ZhiAiWanDebug",
+  "dependencies": {
+    "web-vitals": "^5.0.3"
+  }
+}
