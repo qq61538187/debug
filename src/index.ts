@@ -1,5 +1,4 @@
 import { onCLS, onFCP, onLCP, onTTFB, onINP, Metric } from "web-vitals";
-import pkg from "../package.json"
 /**
  * SDK配置选项
  */
@@ -138,7 +137,7 @@ type CollectableEvent = Omit<
  * Web Vitals增强的前端监控SDK
  */
 export default class ZhiAiWanDebug {
-  version: string = pkg.version;
+  version: string = '1.0.0-alpha.1';
   private config: Required<TrackerConfig>;
   private queue: EventData[] = [];
   private sessionId: string;
