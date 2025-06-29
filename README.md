@@ -1,21 +1,21 @@
-# ZhiAiWanDebug SDK 使用文档
+# @zhiaiwan/debug SDK 使用文档
 
 ## 概述
 
-ZhiAiWanDebug SDK 是一个功能强大的前端监控工具，提供了全面的性能监控、错误追踪和用户行为分析功能。通过简单的配置，您可以收集各种前端数据并发送到指定的服务器进行分析。
+@zhiaiwan/debug SDK 是一个功能强大的前端监控工具，提供了全面的性能监控、错误追踪和用户行为分析功能。通过简单的配置，您可以收集各种前端数据并发送到指定的服务器进行分析。
 
 ## 安装
 
 ```bash
-npm install zhiaiwan-debug
+npm install @zhiaiwan/debug
 # 或
-yarn add zhiaiwan-debug
+yarn add @zhiaiwan/debug
 ```
 
 ## 快速开始
 
 ```javascript
-import ZhiAiWanDebug from "zhiaiwan-debug";
+import ZhiAiWanDebug from "@zhiaiwan/debug";
 // 初始化SDK
 const tracker = new ZhiAiWanDebug({
   reportUrl: "https://your-api-endpoint.com/track",

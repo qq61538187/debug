@@ -5,3 +5,5 @@ commonjs.json
 pnpm-lock.yaml
 rollup.config.js
 tsconfig.json
+.changeset
+.github
